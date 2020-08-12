@@ -17,8 +17,8 @@
   <div class="container pt-9 pb-8">
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
+        <h1 id="main-text" class="display-4 mb-4">Wilkommen auf der BigBlueButton-Instanz der Widar Schule!</h1>
+        <p class="lead offset-lg-2 col-lg-8 col-sm-12 ">BigBlueButton ist eine OpenSource Plattform zur Video-Kommunikation mit besonderem Augenmerk auf die Bedürfnisse von Online-Unterricht.</p>
         <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
           <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
         <% end %>
@@ -27,5 +27,21 @@
     </div>
   </div>
 </div>
+<div class="container mt-8 mb-6 text-center">
 
-<%= render "main/components/features" %>
+  <h2 class="mb-6">Anmelden und teilnehmen</h2>
+
+  <div class="row feature-stamp">
+    <div class="col-lg-6 col-md-6">
+	<h4 class="mt-4">Schülerinnen und Schüler</h4>
+        <p>Schülerinnen und Schüler bekommen eine Einladung mit einem Link und können dann an einer Unterrichtseinheit teilnehmen.</p>
+        <p>Für die Teilnahme ist die Abgabe einer unterschriebenen 
+           <%= link_to "https://lehrer.widarschule.de/Datenschutz-bbb-Einwilligung.pdf", target: "_blank" do %>datenschutzrechlichen Einwilligungserklärung<% end %>  notwendig.</p>
+    </div>
+    <div class="col-lg-6 col-md-6">
+      <h4 class="mt-4">Lehrerinnen und Lehrer</h4>
+      <p>Lehrerinnen und Lehrer können sich über ihr Login anmelden, Räume anlegen und Schülerinnen und Schüler einladen.</p>	
+      <p>Vorbereitete Unterrichtsmaterialien können als PDF hochgeladen werden und dienen als „Präsentationstafel“</p> 
+    </div>
+  </div>
+</div>
